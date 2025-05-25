@@ -436,10 +436,8 @@ iv_end = iv_end_offset ).
           IF ls_hunk-ab = 'a'.
 
             ASSIGN it_a TO <lt_buffer>.
-            ASSERT sy-subrc = 0.
           ELSE.
             ASSIGN it_b TO <lt_buffer>.
-            ASSERT sy-subrc = 0.
           ENDIF.
           CLEAR ls_result.
           ls_result-stable = abap_true.
@@ -496,10 +494,8 @@ iv_end = ls_hunk-ab_start + ls_hunk-ab_length ).
           IF ls_hunk-ab = 'a'.
 
             ASSIGN ls_bounds-a TO <ls_b>.
-            ASSERT sy-subrc = 0.
           ELSE.
             ASSIGN ls_bounds-b TO <ls_b>.
-            ASSERT sy-subrc = 0.
           ENDIF.
 
 
